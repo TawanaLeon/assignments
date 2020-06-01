@@ -1,0 +1,25 @@
+sqlite3 data.sqlite3
+
+CREATE TABLE students (
+INSERT student_id int primary key not null,
+name char(50) not null,
+grad_yr int not null,
+officer int not null
+);
+
+
+CREATE TABLE events (
+INSERT event_id int primary key not null,
+name char(50) not null,
+event_date char(50) not null,
+officer_id int not null
+);
+
+CREATE TABLE service (
+INSERT service_id int primary key not null,
+student_id int not null,
+event_id int not null,
+hours real
+);
+
+.tables
